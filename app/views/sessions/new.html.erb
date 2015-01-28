@@ -1,0 +1,50 @@
+<div id="container">
+	<div id="intro">
+		<div id="pageHeader">
+			<h1><span>Qwinix Note</span></h1>
+			
+		</div>
+	</div>
+	<div id="supportingText">
+
+<div id="explanation">
+
+<p id="flash">
+<% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash#{name}", :id=>"flash" %>
+  <% end %>
+ </p>
+
+<h1>Log in</h1>
+<br>
+</br>
+<%= form_tag sessions_path do %>
+  <p>
+    <%= label_tag :email %><br />
+    <%= text_field_tag :email, params[:email], :class=> "inputs" %>
+    </p>
+
+<p>
+    <%= label_tag :password %><br />
+    <%= password_field_tag :password,nil, :class=> "inputs" %>
+  </p>
+  <p ><%= submit_tag "Submit", :id=>"submit" %></p>
+<% end %>
+<br>
+</br>
+</div>
+</div>
+
+
+
+<div id="footer">
+Copyright © 2014 Qwinix
+		</div>
+
+	
+
+	
+	<div id="linkList">
+</div>
+		
+</div>

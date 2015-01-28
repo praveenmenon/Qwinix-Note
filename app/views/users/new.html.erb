@@ -1,0 +1,63 @@
+<div id="container">
+  <div id="intro">
+    <div id="pageHeader">
+      <h1><span>Qwinix Note</span></h1>
+      
+    </div>
+  </div>
+  <div id="supportingText">
+
+<div id="explanation">
+
+<% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash#{name}" %>
+  <% end %>
+
+<h1>New form</h1>
+<br>
+
+
+<%= form_for :user, :url => users_path do |f| %>
+<p>
+  First name:<br /> <%= f.text_field :first_name, :class => "inputs" %><br /><br>
+
+  Last name :<br /> <%= f.text_field :last_name, :class => "inputs" %><br /><br>
+
+  User name: <br /><%= f.text_field :username, :class => "inputs" %><br /><br>
+
+  Email:<br /> <%= f.text_field :email, :class => "inputs" %><br /><br>
+
+  Password :<br /> <%= f.password_field :password, :class => "inputs" %><br /><br>
+
+  Password Confirmation :<br /> <%= f.password_field :password_confirmation, :class => "inputs" %><br /><br>
+
+  Phone Number:<br /> <%= f.text_field :phone_number, :class => "inputs" %><br /><br>
+
+  City :<br /> <%= f.text_field :city, :class => "inputs" %><br /><br>
+
+  State:<br /> <%= f.text_field :state, :class => "inputs" %><br /><br>
+
+  Country:<br /> <%= f.text_field :country, :class => "inputs" %><br /><br>
+  
+</p>
+  <%= f.submit "Submit", :id=>"submit"%>
+  </br>
+<% end %>
+
+
+</div>
+</div>
+
+
+
+<div id="footer">
+Copyright © 2014 Qwinix
+    </div>
+
+  
+
+  
+  <div id="linkList">
+</div>
+    
+</div>

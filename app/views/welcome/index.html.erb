@@ -1,0 +1,42 @@
+<div id="container">
+	<div id="intro">
+		<div id="pageHeader">
+			<h1><span>Qwinix Note</span></h1>
+		</div>
+	</div>
+	<div id="supportingText">
+
+<div id="explanation">
+
+<% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash#{name}", :id=>"flashR" %>
+  <% end %>
+
+<h1>About Us </h1>
+</br>
+<p>
+Welcome to Qwinixnote! We're glad you're here.Bring your life's work together in one digital workspace. Qwinixnote is the place to collect inspirational ideas, write meaningful words, and move your important files on to a single workspace.
+</p>
+
+<div id="left">
+<h1 id="submit"><%= link_to 'Sign up', new_user_path %></h1> 
+<h1 id="submit"><%= link_to 'Log in', new_session_path %></h1> <br>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div id="footer">
+Copyright © 2014 Qwinix
+		</div>
+
+	
+
+	
+	<div id="linkList">
+</div>
+		
+</div>
