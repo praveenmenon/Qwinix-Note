@@ -1,4 +1,10 @@
 <div id="container">
+
+<div id="loginh">
+<%= link_to "Home", welcome_path, :id=> "button" %>
+  </div>
+
+
   <div id="intro">
     <div id="pageHeader">
       <h1><span>Qwinix Note</span></h1>
@@ -40,7 +46,8 @@
   Country:<br /> <%= f.text_field :country, :class => "inputs" %><br /><br>
   
 </p>
-  <%= f.submit "Submit", :id=>"submit"%>
+  <%= f.submit "Submit", :id=> "button"%>
+  
   </br>
 <% end %>
 

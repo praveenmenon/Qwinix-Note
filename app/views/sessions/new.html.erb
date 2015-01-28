@@ -9,11 +9,9 @@
 
 <div id="explanation">
 
-<p id="flash">
 <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, :id => "flash#{name}", :id=>"flash" %>
+    <%= content_tag :div, msg, :id => "flash#{name}", :id=>"flashR" %>
   <% end %>
- </p>
 
 <h1>Log in</h1>
 <br>
@@ -28,7 +26,7 @@
     <%= label_tag :password %><br />
     <%= password_field_tag :password,nil, :class=> "inputs" %>
   </p>
-  <p ><%= submit_tag "Submit", :id=>"submit" %></p>
+  <p ><%= submit_tag "Submit", :id=> "button" %></p>
 <% end %>
 <br>
 </br>

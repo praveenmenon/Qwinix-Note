@@ -29,6 +29,13 @@ th{
 	background-color: #dedede;
 }
 
+#loginh
+{
+background-color: #DFE3C6;
+margin-top: 0px;
+height: 50px;
+}
+
 #left
 {
 position: relative;
@@ -59,7 +66,7 @@ width: 406px;
 #pageHeader {
 	margin: 0;
 	padding-top: 15px;
-	height: 300px;
+	height: 285px;
 	background: #FFF url(header.jpg) no-repeat bottom;
 	border-bottom: 15px solid #FFF;
 	text-align: right;
@@ -184,4 +191,25 @@ input:-moz-placeholder {
     box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
     clear: both;
 }
+
+#button {
+    background: #464939;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 25px;
+    height: 42px;
+    width: 116px;
+    line-height: 47px;
+    margin: 25px 21px;
+    text-align: center;
+    border: 0;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+}
+
+#button:hover {
+  background: #C0C0C0
+}
+
+
 
